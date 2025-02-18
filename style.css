@@ -9,6 +9,7 @@ body {
     font-family: "Playfair Display", serif;
     margin: 0;
     color: #fff;
+    text-align: center; /* Centering text */
 }
 
 .container {
@@ -16,6 +17,10 @@ body {
     margin: 0 auto;
     max-width: 100%;
     width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centering container content */
 }
 
 header {
@@ -25,7 +30,7 @@ header {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Centering header content */
     min-height: calc(100vh - 102px);
 }
 
@@ -43,17 +48,18 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Centering nav content vertically */
 }
 
-nav .logo {
-    font-size: 2.5rem;
-    font-weight: bold;
+nav .logo img {
+    max-height: 50px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Removing default margin */
 }
 
 nav li a {
@@ -94,6 +100,25 @@ footer strong {
 
 footer p {
     margin: 0;
+}
+
+.combined-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering combined images */
+}
+
+.combined-images img,
+.combined-images video {
+    width: 100%;
+    max-width: 400px;
+}
+
+.about-us img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
 }
 
 @media screen and (max-width: 700px) {
