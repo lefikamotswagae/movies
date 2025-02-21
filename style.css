@@ -22,28 +22,6 @@ body {
     align-items: center;
 }
 
-header {
-    background-image: url("https://i.postimg.cc/s2633DVn/car-bg.jpg");
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: calc(100vh - 102px);
-}
-
-.content {
-    font-size: 2rem;
-    margin: auto;
-    max-width: 100%;
-}
-
-.content h1 {
-    color: #ffd700;
-    margin-bottom: 0;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -84,27 +62,30 @@ nav li a {
     border-radius: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    width: 100%;
-}
-
-footer ul {
+header {
+    background-image: url("https://i.postimg.cc/s2633DVn/car-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
+    min-height: calc(100vh - 102px);
 }
 
-footer strong {
+.header-content {
+    font-size: 2rem;
+    margin: auto;
+    max-width: 100%;
+}
+
+.header-content h1 {
     color: #ffd700;
+    margin-bottom: 0;
 }
 
-footer p {
-    margin: 0;
+.products {
+    padding: 2rem 0;
 }
 
 .product-gallery {
@@ -123,8 +104,22 @@ footer p {
     height: auto;
 }
 
+.product-video {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 700px) {
-    .content {
+    .header-content {
         margin: 2rem auto 0;
         font-size: 1.4rem;
     }
@@ -151,4 +146,3 @@ footer p {
         text-align: center;
     }
 }
-
