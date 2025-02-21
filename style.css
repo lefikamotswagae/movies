@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #f0f0f0; /* Very light grey background */
     font-family: "Roboto", sans-serif;
     margin: 0;
-    color: #fff;
+    color: #000; /* Black font color */
     text-align: center;
 }
 
@@ -92,11 +92,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .product {
     text-align: center;
     margin: 10px;
+    flex: 1;
 }
 
 .product img {
@@ -145,4 +147,15 @@ footer {
         margin: 1rem;
         text-align: center;
     }
+
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        flex: 1 1 100%;
+    }
 }
+
+   
