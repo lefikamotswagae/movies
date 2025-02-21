@@ -107,23 +107,20 @@ footer p {
     margin: 0;
 }
 
-.combined-images {
+.product-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.combined-images img,
-.combined-images video {
-    width: 100%;
-    max-width: 400px;
+.product {
+    text-align: center;
+    margin: 10px;
 }
 
-.about-us img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
+.product img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 700px) {
