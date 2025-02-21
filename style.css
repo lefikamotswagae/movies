@@ -93,6 +93,7 @@ header {
     justify-content: space-around;
     align-items: flex-start;
     gap: 20px;
+    flex-wrap: nowrap; /* Ensure items stay in a single row */
 }
 
 .product {
@@ -157,5 +158,4 @@ footer {
         flex: 1 1 100%;
     }
 }
-
    
